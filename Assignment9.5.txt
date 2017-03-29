@@ -12,30 +12,23 @@ sink.
 	It acts as flume repository.
 *Flume sink:
 	It removes the event from channel and put into an external repository like HDFS 
-or
- move to next flume agent.
+or move to next flume agent.
 
 2. Can flume provide 100% reliability while transfering the data:
     Yes, Apache Flume provides end to end reliability because of its transactional approach 
-in 
-data flow.
+in data flow.
 
 3.The consolidation in flume:
 *It collect data from different sources even from different flume agents.
-
 *Flume source can collect all data flow from different sources and flows through channel 
-and sink
-and send this data to HDFS or target destination.
-
+and sink and send this data to HDFS or target destination.
 
 4.An event in flume:
 *A unit of data with set of string attributes called flume event.
-
 *The external source like web-server sends events to the source.
 *Flume has internal built in functions to understand source format.
 
 5.An agent in flume:
 *A flume agent is a JVM process that holds the flume core components like source,channel and sink
-
-through which event flows from an external source like web-servers to destination like HDFS.
+through which event flows from an external source like web-servers to destination like HDFS.
 *An agent is heart of apache flume.
